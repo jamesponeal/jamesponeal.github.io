@@ -2,7 +2,7 @@
 
 In this lesson, we had to add stylesheets to our personal website that we started last week.  This was a fun and educational lesson for me.
 
-We were asked to include a link to our site which can be found [here](jamesponeal.github.io).
+We were asked to include a link to our site which can be found [*here*](http://jamesponeal.github.io).
 
 We were also asked to answer the following questions:
 
