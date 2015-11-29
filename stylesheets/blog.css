@@ -7,3 +7,7 @@ h4 {
   margin: 0px 0px 0px 0px;
   font-size: 20px;
 }
+
+.code {
+  font-family: "Courier New", Courier, monospace;
+}
