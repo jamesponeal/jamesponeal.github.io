@@ -13,6 +13,9 @@ h4 {
   font-family: "Courier New", Courier, monospace;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 1em, 1em, 1em, 1em;
-  background-color: white;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #202020;
+  color: #B0B0B0;
 }
