@@ -10,4 +10,6 @@ h4 {
 
 .code {
   font-family: "Courier New", Courier, monospace;
+  border: 1px solid black;
+  border-radius: 2px;
 }

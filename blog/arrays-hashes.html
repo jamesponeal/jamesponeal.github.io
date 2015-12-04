@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jim's O'Neal Blog Entry</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="blog-index.html">Blog Home</a>
+    </nav>
+  </header>
+  <main>
+  <h2>Lesson 4.8 - Arrays and Hashes</h2>
+  <h4>by Jim O'Neal on Friday, Dec 4, 2015</h4>
+    <section>
+      <p>
+        In this blog I will discuss Arrays and Hashes in Ruby, what they are, what are the differences, and will give some examples of both.
+      </p>
+      <p>
+        Arrays and hashes have important similarities and important differences.  Both arrays and hashes are like storage bins that can hold pieces of information (elements) in specific slots.  Both arrays and hashes can be assigned a name, so that the array or hash can be utilized in other parts of the program, and the elements can be accessed individually.  Both arrays and hashes can contain strings, numbers, or even other arrays or hashes.
+      </p>
+      <p>
+        The important difference between an array and hash is how the 'slots' are named.  In an array, each slot has an index number, starting at 0 and then increasing by 1's for each element.  The elements in an array are accessed by refering to this index number.  Hashes on the other hand index by using a 'key' which can be assigned a specific name.  This allows the program to access the value in the hash by refering to a name rather than just an index number.
+      </p>
+      <p>
+        Below are some examples showing the format of an array and how to access elements:
+      </p>
+      <p class="code">
+        sample_array = ["this", "is", "an", "array"]
+
+        return sample_array[0] # "this"
+        return sample_array[1] # "is"
+        return sample_array[2] # "an"
+        return sample_array[3] # "array"
+      </p>
+      <p>
+        Below is an example of a hash and how to access the values in a hash using the keys:
+      </p>
+      <p class="code">
+        sample_hash = {
+          favorite_number: 13,
+          favorite_color: "blue",
+          favorite_animal: "elephant",
+        }
+
+        return sample_hash[:favorite_number] # 13
+        return sample_hash[:favorite_color] # "blue"
+        return sample_hash[:favorite_animal] # "elephant"
+      </p>
+    </section>
+  </main>
+</body>
+</html>
