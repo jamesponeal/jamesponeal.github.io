@@ -3,14 +3,17 @@ html {
 }
 
 h1 {
+  font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
+  font-weight: 100;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   margin: 0px 0px 0px 0px;
   display: block;
   padding-top: 40px;
 }
 
 h2 {
+  font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
   text-align: center;
   font-size: 30px;
   margin: 0px 0px 5px 0px;
@@ -26,19 +29,24 @@ nav {
 }
 
 a.nav {
+  font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
+  font-weight: 100;
   display: inline;
   padding: 0px 20px 0px 20px;
   font-size: 20px;
 }
 
 a:link{
-    color: white;
+  font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
+  font-weight: 100;
+  color: white;
 }
 
 a:hover{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
 }
 
 a:visited{
@@ -71,6 +79,11 @@ a.bloglink {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 40%;
+}
+
+p {
+  font-family: 'Palatino', serif;
 }
 
 footer {
