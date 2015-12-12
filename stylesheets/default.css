@@ -90,3 +90,8 @@ footer {
   font-size: 18px;
   text-align: center;
 }
+
+.icon {
+  height: 3em;
+  width: 3em;
+}
