@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jim's O'Neal Blog Entry</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="blog-index.html">Blog Home</a>
+    </nav>
+  </header>
+  <main>
+  <h2>Lesson 5.9 - Enumerable Method</h2>
+  <h4>by Jim O'Neal on December 13, 2015</h4>
+    <section>
+      <p>
+        In this blog I will discuss an enumerable method called .group_by.  I chose this method from a list of three methods available for this exercise: .group_by, .cycle, and .map.  I chose .group_by because it seemed the most interesting and one that I have never used.
+      </p>
+      <p>
+        The .group_by method is a very useful method.  The description of this method from the website ruby-doc.org is as follows:  Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key. <br>
+        The syntax of the method works similar to the .each method which should be familiar to most of the readers here.  The method is typically called on a list of data or an array.  The important thing to remember is that .group_by will always return a hash, and the elements of the passed-in data will be the values in the hash, not the keys.
+      </p>
+      <p>
+        To help this method make sense, below are a few simple examples and the result when the method is run:
+      </p>
+      <p><u>Example 1:</u></p>
+      <p class="code">
+        hash1 = (1..6).group_by { |i| i%3 }<br>
+        <br>
+        hash1 = {<br>
+          1=>[1, 4],<br>
+          2=>[2, 5],<br>
+          0=>[3, 6]<br>
+        }<br>
+      </p>
+      <p><u>Example 2:</u><br></p>
+      <p class="code">
+        test_array = [1,2,3,4,5,6]<br>
+        <br>
+        hash2 = test_array.group_by{|x| x > 3}<br>
+        <br>
+        hash2 = {<br>
+          false=>[1, 2, 3],<br>
+          true=>[4, 5, 6]<br>
+        }<br>
+      </p>
+      <p><u>Example 3:</u><br></p>
+      <p class="codewide">
+        name_array = ["Jim", "Bob", "Kate", "Dave", "James", "Thomas", "Carrie", "Rumpelstiltskin"]<br>
+        <br>
+        hash3 = name_array.group_by{|x| x.length}<br>
+        <br>
+        hash3 = {<br>
+          3=>["Jim", "Bob"],<br>
+          4=>["Kate", "Dave"],<br>
+          5=>["James"],<br>
+          6=>["Thomas", "Carrie"],<br>
+          15=>["Rumpelstiltskin"]<br>
+        }<br>
+      </p>
+      <p><u>Example 4:</u><br></p>
+      <p class="codewide">
+        food_array = ["Carrot Cake", "Steak", "Pumpkin Pie", "Blueberry Pie", "Hamburger", "Pizza", "Chocolate Cake", "Salad"]<br>
+        <br>
+        hash4 = food_array.group_by do |x|<br>
+          if x.include?("Cake") || x.include?("Pie")<br>
+            "Dessert"<br>
+          else<br>
+            "Dinner"<br>
+          end<br>
+        end<br>
+        <br>
+        hash4 = {<br>
+          "Dessert"=>["Carrot Cake", "Pumpkin Pie", "Blueberry Pie", "Chocolate Cake"],<br>
+          "Dinner"=>["Steak", "Hamburger", "Pizza", "Salad"]<br>
+        }<br>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
