@@ -79,11 +79,14 @@ a.bloglink {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 2em;
   width: 40%;
 }
 
 p {
   font-family: 'Palatino', serif;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 footer {
@@ -94,4 +97,9 @@ footer {
 .icon {
   height: 3em;
   width: 3em;
+}
+
+.gif {
+  float: left;
+  margin-left: 8em;
 }
