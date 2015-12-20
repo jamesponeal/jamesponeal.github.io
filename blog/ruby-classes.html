@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jim's Blog Entry</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="blog-index.html">Blog Home</a>
+    </nav>
+  </header>
+  <main>
+  <h2>Lesson 6.9 - Ruby Classes</h2>
+  <h4>by Jim O'Neal on December 20, 2015</h4>
+    <section>
+      <p>
+        In this blog, I will discuss classes in Ruby, show an example class and talk about when to use isntance variables vs local variables.
+      </p>
+      <p>
+        A class is a set of rules, methods, and plans for how an object behaves.  An object is always part of a class.  Classes are very useful in Ruby because methods can be grouped together inside a class and made available to any object created that is part of that class.
+      </p>
+      <p>
+        In the example below, I have an example of a class called "Pet" which simulates a virtual pet. Inside the class are three methods that describe things you can do with the pet: walk it, feed it, and put it to bed.  There is also a method to check to see if the pet is still alive after each action.
+      </p>
+      <p class="code">
+        class Pet<br>
+<br>
+          def initialize<br>
+            @happiness = 5<br>
+            @hunger = 5<br>
+            @energy = 5<br>
+            @alive_status = true<br>
+          end<br>
+<br>
+          def walk<br>
+            @happiness += 1<br>
+            @hunger += 1<br>
+            @energy -= 1<br>
+            still_alive?<br>
+          end<br>
+<br>
+          def feed<br>
+            @hunger -= 2<br>
+            @happiness += 1<br>
+            still_alive?<br>
+          end<br>
+<br>
+          def put_to_bed<br>
+            @hunger += 1<br>
+            @energy += 2<br>
+            @happiness -= 1<br>
+            still_alive?<br>
+          end<br>
+<br>
+          def still_alive?<br>
+            @alive_status = false if @happiness <= 0<br>
+            @alive_status = false if @hunger >= 10<br>
+            @alive_status = false if @energy <= 0<br>
+          end<br>
+<br>
+        end<br>
+      </p>
+      <p>
+        In this example, there are variables that are created on the initialization of a new instance of "Pet".  These variables are created as instance variables because they are intended to belong to that instance of the object of "Pet".  They also need to be instance variables because these variables will be used in multiple methods inside the class.  An instance variable is indicated by using "@" symbol in front of the variable name.
+      </p>
+      <p>
+        In my example code, the instance variables will be assigned to a new instance of Pet.  These variables can then be used inside the walk, feed, and put_to_bed methods, as well as the still_alive? method.  The variables are saved as part of the Pet object and do not belong specifically to an individual method like a local variable would be.
+      </p>
+      <p>
+        Classes and instance variables are part of what makes Ruby powerful and useful.  For more information on both, visit <a href="http://www.tutorialspoint.com/ruby/ruby_classes.htm">this</a> page, or read about them in David Black's "The Well Grounded Rubyist", or Chris Pine's "Learn to Program".
+      </p>
+    </section>
+  </main>
+</body>
+</html>
