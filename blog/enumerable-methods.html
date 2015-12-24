@@ -30,9 +30,9 @@
         hash1 = (1..6).group_by { |i| i%3 }<br>
         <br>
         hash1 = {<br>
-          1=>[1, 4],<br>
-          2=>[2, 5],<br>
-          0=>[3, 6]<br>
+        &nbsp;&nbsp;1=>[1, 4],<br>
+        &nbsp;&nbsp;2=>[2, 5],<br>
+        &nbsp;&nbsp;0=>[3, 6]<br>
         }<br>
       </p>
       <p><u>Example 2:</u><br></p>
@@ -42,8 +42,8 @@
         hash2 = test_array.group_by{|x| x > 3}<br>
         <br>
         hash2 = {<br>
-          false=>[1, 2, 3],<br>
-          true=>[4, 5, 6]<br>
+        &nbsp;&nbsp;false=>[1, 2, 3],<br>
+        &nbsp;&nbsp;true=>[4, 5, 6]<br>
         }<br>
       </p>
       <p><u>Example 3:</u><br></p>
@@ -53,11 +53,11 @@
         hash3 = name_array.group_by{|x| x.length}<br>
         <br>
         hash3 = {<br>
-          3=>["Jim", "Bob"],<br>
-          4=>["Kate", "Dave"],<br>
-          5=>["James"],<br>
-          6=>["Thomas", "Carrie"],<br>
-          15=>["Rumpelstiltskin"]<br>
+        &nbsp;&nbsp;3=>["Jim", "Bob"],<br>
+        &nbsp;&nbsp;4=>["Kate", "Dave"],<br>
+        &nbsp;&nbsp;5=>["James"],<br>
+        &nbsp;&nbsp;6=>["Thomas", "Carrie"],<br>
+        &nbsp;&nbsp;15=>["Rumpelstiltskin"]<br>
         }<br>
       </p>
       <p><u>Example 4:</u><br></p>
@@ -65,16 +65,16 @@
         food_array = ["Carrot Cake", "Steak", "Pumpkin Pie", "Blueberry Pie", "Hamburger", "Pizza", "Chocolate Cake", "Salad"]<br>
         <br>
         hash4 = food_array.group_by do |x|<br>
-          if x.include?("Cake") || x.include?("Pie")<br>
-            "Dessert"<br>
-          else<br>
-            "Dinner"<br>
-          end<br>
+        &nbsp;&nbsp;if x.include?("Cake") || x.include?("Pie")<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"Dessert"<br>
+        &nbsp;&nbsp;else<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"Dinner"<br>
+        &nbsp;&nbsp;end<br>
         end<br>
         <br>
         hash4 = {<br>
-          "Dessert"=>["Carrot Cake", "Pumpkin Pie", "Blueberry Pie", "Chocolate Cake"],<br>
-          "Dinner"=>["Steak", "Hamburger", "Pizza", "Salad"]<br>
+        &nbsp;&nbsp;"Dessert"=>["Carrot Cake", "Pumpkin Pie", "Blueberry Pie", "Chocolate Cake"],<br>
+        &nbsp;&nbsp;"Dinner"=>["Steak", "Hamburger", "Pizza", "Salad"]<br>
         }<br>
       </p>
     </section>
