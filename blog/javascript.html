@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jim's Blog Entry</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="blog-index.html">Blog Home</a>
+    </nav>
+  </header>
+  <main>
+  <h2>Lesson 7.10 - Looping in Javascript vs Ruby</h2>
+  <h4>by Jim O'Neal on December 24, 2015</h4>
+    <section>
+      <p>
+        In this week's blog entry, I chose to discuss the difference between looping in Ruby and looping in JavaScript.  For this post I will discuss specifically only 'while' loops and 'for' loops.
+      </p>
+      <p>
+        Looping in a program can be described simply by a mechanism for which a certain task is repeated for a prescribed number of times.  The details of what gets looped, and how you trigger the loop to be stopped is to be determined by the specifics of what you are trying to accomplish, and furthermore, determined by the tools available to you by the programming language you are working with.  Fundamentally, the concept of looping in Ruby and JavaScript both follow this general conceptual definition.  The main differences reveal themselves when the syntax that is used in one language vs the other is explored.
+      </p>
+      <p>
+        First, I will take a look at a method of looping called the 'while' loop.  This loop method basically says "while this condition is true, keep doing all of this stuff".  Calling out a while loop in Ruby vs JavaScript could look something like this:
+      </p>
+      <p>
+        Ruby:
+      </p>
+      <p class="code">
+        counter = 0<br>
+        while counter < 10<br>
+        &nbsp;&nbsp;puts "My favorite number is #{counter}."<br>
+        &nbsp;&nbsp;counter += 1<br>
+        end<br>
+      </p>
+      <p>
+        This little block of code first sets a variable named 'counter' to 0. Next it moves to a line of code that uses the keyword 'while'.  Ruby then knows to check for a condition after this keyword.  In this case I have specified 'counter < 10'.  Ruby now understands that it is going to repeat everything under the line containing 'while' and the corresponing keyword 'end' until the condition is met.  In this case, I have simply instructed it to print a string to the screen.  The important part is that I have also included a line that says 'counter += 1'.  This indexes the variable 'counter' to the next number. Once Ruby has successfully completed both the 'puts' command and modifying the variable 'counter', it then goes to the top and checks the conditional statement again.  If the counter is still less than 10, it repeats.  While loops can be highly useful, but also dangerous if you do not remember to put in some mechanism for the loop to terminate.
+      </p>
+      <p>
+        Now lets look at the same code but written in JavaScript:
+      </p>
+      <p class="code">
+        var counter = 0;<br>
+        while (counter < 10) {<br>
+        &nbsp;&nbsp;console.log("My favorite number is " + counter + ".");<br>
+        &nbsp;&nbsp;counter += 1;<br>
+      };<br>
+      </p>
+      <p>
+        As you can see, the syntax is different.  JavaScript requires more, what I would call, 'punctuation' than Ruby requires, but the concept is the same.  You are specifying some code that you want repeated, and including a conditional statement with a mechanism for ending the loop.
+      </p>
+      <p>
+        The second loop type that I wanted to examine is the 'for' loop.  The for loop essentiall does the same thing that a while loop does, but it condenses the counter function into the loop mechanism itself.
+      </p>
+      <p>
+        Ruby:
+      </p>
+      <p class="code">
+        number = 10<br>
+        for i in 1..number<br>
+        &nbsp;&nbsp;puts "My favorite number is #{i}."<br>
+        end<br>
+      </p>
+      <p>
+        JavaScript:
+      </p>
+      <p class="code">
+        var number = 10;<br>
+        for (var i = 1; i <= number; i++) {<br>
+        &nbsp;&nbsp;console.log("My favorite number is " + i + ".");<br>
+      };<br>
+      </p>
+      <p>
+        Once again, the syntax is different, but the concept is the same.
+      </p>
+      <p>
+        There are many other types of loops that exist in both languages, including methods for looping through arrays and other data containers, but for the purposes of this blog entry, I am only covering 'while' and 'for' loops.  I hope you enjoyed reading, and I hope you learned something.  Thanks for visiting!
+      </p>
+    </section>
+  </main>
+</body>
+</html>
