@@ -27,38 +27,38 @@
       <p class="code">
         class Pet<br>
 <br>
-          def initialize<br>
-            @happiness = 5<br>
-            @hunger = 5<br>
-            @energy = 5<br>
-            @alive_status = true<br>
-          end<br>
+        &nbsp;&nbsp;def initialize<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@happiness = 5<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@hunger = 5<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@energy = 5<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@alive_status = true<br>
+        &nbsp;&nbsp;end<br>
 <br>
-          def walk<br>
-            @happiness += 1<br>
-            @hunger += 1<br>
-            @energy -= 1<br>
-            still_alive?<br>
-          end<br>
+        &nbsp;&nbsp;def walk<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@happiness += 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@hunger += 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@energy -= 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;still_alive?<br>
+        &nbsp;&nbsp;end<br>
 <br>
-          def feed<br>
-            @hunger -= 2<br>
-            @happiness += 1<br>
-            still_alive?<br>
-          end<br>
+        &nbsp;&nbsp;def feed<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@hunger -= 2<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@happiness += 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;still_alive?<br>
+        &nbsp;&nbsp;end<br>
 <br>
-          def put_to_bed<br>
-            @hunger += 1<br>
-            @energy += 2<br>
-            @happiness -= 1<br>
-            still_alive?<br>
-          end<br>
+        &nbsp;&nbsp;def put_to_bed<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@hunger += 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@energy += 2<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@happiness -= 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;still_alive?<br>
+        &nbsp;&nbsp;end<br>
 <br>
-          def still_alive?<br>
-            @alive_status = false if @happiness <= 0<br>
-            @alive_status = false if @hunger >= 10<br>
-            @alive_status = false if @energy <= 0<br>
-          end<br>
+        &nbsp;&nbsp;def still_alive?<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@alive_status = false if @happiness <= 0<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@alive_status = false if @hunger >= 10<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;@alive_status = false if @energy <= 0<br>
+        &nbsp;&nbsp;end<br>
 <br>
         end<br>
       </p>
