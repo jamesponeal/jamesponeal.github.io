@@ -83,6 +83,12 @@ a.bloglink {
   width: 40%;
 }
 
+a.textlink {
+  font-family: serif;
+  font-weight: 100;
+  color: black;
+}
+
 p {
   font-family: 'Palatino', serif;
   margin-left: 1em;
