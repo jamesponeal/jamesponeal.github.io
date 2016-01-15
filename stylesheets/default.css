@@ -43,13 +43,13 @@ a.nav {
 a:link{
   font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
   font-weight: 100;
-  color: white;
+  color: #f0f0f5;
 }
 
 a:hover{
   font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
   font-weight: 100;
-  color: white;
+  color: #f0f0f5;
   text-decoration: none;
 }
 
