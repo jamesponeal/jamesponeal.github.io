@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="../../stylesheets/default.css"/>
+  <link type="text/css" rel="stylesheet" href="../../stylesheets/list.css"/>
+  <title>Shopping List</title>
+ </head>
+<body>
+  <header>
+    <nav>
+      <a href="../project-index.html">Projects Home</a>
+    </nav>
+    <h2>Shopping List</h2>
+  </header>
+
+  <form class="itemForm">
+    <p id="item_tag">Item to Add:<input type="text" name="itemToAdd"/></p>
+    <p id="qty_tag">Qty to Add: <input type="text" name="qtyToAdd"/></p>
+  </form>
+
+  <div id="add-button">ADD</div>
+
+  <p id="current_list_header">Current List</p>
+
+  <table id="current_list_table">
+    <thead id="table_header">
+      <tr>
+        <th id="item_header">ITEM</th>
+        <th id="qty_header">QTY</th>
+      </tr>
+    </thead>
+    <tbody id="table_body">
+    </tbody>
+  </table>
+
+  <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="list.js"></script>
+</body>
+</html>
+
+
