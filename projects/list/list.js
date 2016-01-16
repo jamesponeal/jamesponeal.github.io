@@ -5,6 +5,8 @@ $(document).ready(function(){
     var itemToAdd = $('input[name=itemToAdd]').val();
     var qtyToAdd = $('input[name=qtyToAdd').val();
     $('#table_body').append('<tr><td>'+itemToAdd+'</td><td class="qtyData">'+qtyToAdd+'</td></tr>');
+    $('input[name=itemToAdd]').val('');
+    $('input[name=qtyToAdd]').val('');
   });
 });
 
