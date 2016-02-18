@@ -27,6 +27,7 @@ section {
   border: 1px solid black;
   border-radius: 5px;
   padding-left: 0.5em;
+  padding-right: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   background-color: #202020;
@@ -44,3 +45,30 @@ section {
   background-color: #202020;
   color: #B0B0B0;
 }
+
+.code-thin {
+  width: 50%;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  background-color: #202020;
+  color: #B0B0B0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
