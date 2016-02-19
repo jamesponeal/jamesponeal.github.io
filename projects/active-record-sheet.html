@@ -15,10 +15,17 @@
     <h2>Active Record Cheat Sheet</h2>
     <h4>by Jim O'Neal on February 15, 2016</h4>
     <section>
-      <p>ActiveRecord is a Ruby library for working with Relational SQL Databases like MySQL. It provides an Object Relational Mapping (ORM) with these core features: a single Ruby object maps to a database table.</p>
+      <p>ActiveRecord is a Ruby library for working with Relational SQL Databases like MySQL. It provides an Object Relational Mapping (ORM) with these core features:
+        <ul id="ORM-list">
+          <li>A single Ruby object maps to a database table.</li>
+          <li>Columns are accessed by methods, and are inferred from the database schema.</li>
+          <li>Methods for create, read, update, and delete (CRUD) are defined.</li>
+          <li>A Domain Specific Language (DSL) for easily constructing SQL queries in Ruby.</li>
+        </ul>
+      </p>
       <p>Below are a list of common commands and notes that may be helpful to set up your Active Record database for a Ruby application.</p>
 
-      <p><u>FROM THE COMMAND LINE:</u></p>
+      <p><u>FROM THE COMMAND LINE:</u><i> (note: once gems are installed, 'be' can be substituted for 'bundle exec' in the command line)</i></p>
 
       <table>
         <tr>
@@ -56,7 +63,7 @@
       </table>
 
       <p><u>FROM THE RAKE CONSOLE</u> <i>(and also from any Ruby file connected to an Active Record database):</i><br>
-      The rake console can be used to generate SQL queries via the Active Record ORM.  Below are some examples of common commands that might be used (using a 'dogs' table and 'Dog' class as an example):</p>
+      The rake console can be used to generate SQL queries via the Active Record ORM for testing your model and database table associations and relationships.  Below are some examples of common commands that might be used (using a 'dogs' table and 'Dog' class as an example):</p>
 
       <table>
         <tr>
