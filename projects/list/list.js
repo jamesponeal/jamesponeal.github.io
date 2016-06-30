@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   $('#add-button').click(function(){
     var itemToAdd = $('input[name=itemToAdd]').val();
